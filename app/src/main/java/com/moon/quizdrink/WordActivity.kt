@@ -230,6 +230,7 @@ class WordActivity : AppCompatActivity() {
                     binding.board.visibility = View.INVISIBLE
                     binding.wordResult.visibility = View.VISIBLE
                     binding.result.text = "결과: $stage\n최고: $lastStage"
+                    binding.continueGame.isEnabled = false
 //                    binding.continueGame.text = "순위 올리기"
 //                    binding.continueGame.setOnClickListener {
 //                        MaterialAlertDialogBuilder(this).apply {

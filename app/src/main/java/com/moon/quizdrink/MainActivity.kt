@@ -56,8 +56,6 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(Intent(this, RankActivity::class.java))
 //        }
 
-        updateGold()
-
         MobileAds.initialize(this) {}
         binding.adView.run {
             loadAd(AdRequest.Builder().build())
@@ -67,6 +65,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         updateStage()
+        updateGold()
     }
 
     fun updateGold() {
